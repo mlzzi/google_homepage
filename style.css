@@ -5,44 +5,57 @@ html {
 }
 
 #dots {
-    display: flex;
-    height: 50px;
-    width: 50px;
+    display: grid;
+    width: 9px;
+    height: 9px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
 }
 
-#dot-1 {
-  background-color: black;
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
+#dots:hover {
+    background-color: rgb(204, 204, 204);
+    border-radius: 50%;
+    align-content: center;
+    cursor: pointer;
 }
 
-#dot-2 {
-  background-color: black;
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
+.circle {
+    width: 4px;
+    height: 4px;
+    background-color: #5f6368;
+    border-radius: 50%;
 }
 
-#dot-3 {
-  background-color: black;
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
-}
-
-#dot-4 {
-  background-color: black;
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
-}
-
-.login {
-    background-color: #4c8bf5;
+#login {
+    display: block;
+    background-color: #387bee;
     text-align: center;
+    align-content: baseline;
+    font-size: 15px;
     padding: 10px;
     border-radius: 3px;
-    width: 80px;
+    width: 100px;
+    height: 15px;
     color: white;
+    margin-left: 40px;
+}
+
+#login:hover {
+    background-color: #4e89ee;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    padding-right: 10px;
+    align-content: baseline;
+}
+
+nav .nav-item {
+    padding: 10px;
+    align-content: center;
 }
