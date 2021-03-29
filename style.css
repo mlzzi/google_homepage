@@ -108,6 +108,8 @@ button:hover {
 }
 
 #foot {
+    display: grid;
+    grid-template-rows: 100%;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -118,20 +120,26 @@ button:hover {
     align-items: center;
 }
 
-#footer {
+#footer-1 {
     display: flex;
-    padding-left: 30px;
-    padding-right: 40px;
-    justify-content: space-evenly;
-    text-align: base;
+    grid-column: 1;
     color: #747474;
     font-size: 14px;
     list-style-type: none;
-    align-items: center;
+}
+
+#footer-2 {
+    display: flex;
+    grid-column: 3;
+    color: #747474;
+    font-size: 14px;
+    list-style-type: none;
 }
 
 .btn {
     padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #ft-4 {
